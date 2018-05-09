@@ -8,7 +8,7 @@ public class FlagsIso {
 
     public static Drawable getFlagDrawable(Context context, String flagName) {
         Resources res =  context.getResources();
-        int resourceId = res.getIdentifier(flagName, "drawable", context.getPackageName());
+        int resourceId = res.getIdentifier(flagName.toLowerCase(), "drawable", context.getPackageName());
         return res.getDrawable(resourceId);
     }
 }
